@@ -5,15 +5,18 @@
 }
 
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+    font-size: 55%;
+    overflow: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
     background-color: rgb(36, 45, 61);
+    height: 100vh;
+    width: 100vw
 }
 
 .aboutMe {
     margin-top: 2rem;
+    
 }
 
 .header {
@@ -27,6 +30,7 @@ html {
 }
 
 section {
+    
     margin: 0 15%;
     padding: 3.2rem 5%;
     background-color: rgb(203, 217, 218);
@@ -40,14 +44,15 @@ section {
     column-gap: 8rem;
 }
 
-.aboutMe .column .image {
-    flex: 1 1 25rem;
-}
+
 
 .aboutMe .column img {
-    width: 100%;
-    height: 30rem;
-    margin-bottom: 3rem;
+    margin-left: 4rem;
+    width: 80%;
+    height: 35rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4rem;
 }
 
 .aboutMe .column .content1 {
