@@ -4,14 +4,39 @@
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .aboutMe .column {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .img-contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutMe .column img {
+        margin: 0 auto;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
 html {
     font-size: 55%;
-    overflow: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
     background-color: rgb(36, 45, 61);
-    height: 100vh;
-    width: 100vw
+}
+
+body {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    min-height: 100vh;        
 }
 
 .aboutMe {
@@ -24,17 +49,17 @@ html {
     background-color: rgb(39, 62, 62);
     text-align: center;
     font-size: 3rem;
-    margin: 0.7rem 17%;
+    margin: 0.7rem auto;
     padding: 0 7%;
     border-radius: 10rem;
 }
 
 section {
-    
-    margin: 0 15%;
+    max-width: 1000px;
+    margin: 2rem auto;
     padding: 3.2rem 5%;
     background-color: rgb(203, 217, 218);
-    border-radius: 10rem;
+    border-radius: 6rem;
 }
 
 
@@ -66,7 +91,7 @@ section {
     flex-direction: row; 
     align-items: flex-start;
     gap: 3rem; 
-    margin-bottom: 2rem; /* Education ile arasına biraz boşluk koyalım */
+    margin-bottom: 2rem;
 }
 
 .aboutMe .column .title {
